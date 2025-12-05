@@ -8,45 +8,33 @@
     <title>Laravel Quickstart - Basic</title>
 
     <!-- Fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    
-    {{-- Original Elixir CSS reference, not used any more
-    <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> 
-    --}}
-    
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    {{-- not needed, commenting out for reference
-    <style>
-        body {
-            font-family: 'Lato';
-        }
-
-        .fa-btn {
-            margin-right: 6px;
-        }
-    </style>
+    {{-- Original Elixir CSS reference (no longer used, kept for reference)
+    <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
     --}}
-    
+
+    {{-- Custom app CSS in public/css/app.css --}}
+    <link href="{{ asset('css/app.css') }}?v=2" rel="stylesheet">
 </head>
+
 <body id="app-layout">
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Task List
                 </a>
             </div>
-
         </div>
     </nav>
 
+    {{-- Page content from child views (e.g., tasks.blade.php) --}}
     @yield('content')
 
     <!-- JavaScripts -->
