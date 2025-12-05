@@ -1,11 +1,8 @@
-/* Full-page tech background */
 body {
-    background: url('../abstract-background--technology-background--dark-web.jpg') 
+    background: url('/abstract-background--technology-background--dark-web.jpg')
                 no-repeat center center fixed;
     background-size: cover;
 }
-
-
 
 {{--body {
     background: url('/glowing-circuit-ring_1571780_1189.jpg') no-repeat center center fixed;
