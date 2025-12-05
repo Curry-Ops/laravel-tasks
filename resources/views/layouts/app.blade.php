@@ -13,10 +13,14 @@
 
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
-    <link rel="stylesheet" href="/css/app.css">
+    
+    {{-- Original Elixir CSS reference, not used any more
+    <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> 
+    --}}
+    
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-
+    {{-- not needed, commenting out for reference
     <style>
         body {
             font-family: 'Lato';
@@ -26,6 +30,8 @@
             margin-right: 6px;
         }
     </style>
+    --}}
+    
 </head>
 <body id="app-layout">
     <nav class="navbar navbar-default">
