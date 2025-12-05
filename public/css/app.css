@@ -1,9 +1,15 @@
 /* Full-page tech background */
+/* Full-page tech background - TEST VERSION */
 body {
+    background-color: #222222 !important;  /* dark gray test */
+}
+
+
+{{--body {
     background: url('/glowing-circuit-ring_1571780_1189.jpg') no-repeat center center fixed;
     background-size: cover;
 }
-
+--}}
 /* Make page content readable */
 .container, .card, .table, .panel, .content {
     background-color: rgba(255, 255, 255, 0.85);
